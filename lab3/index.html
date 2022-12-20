@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Alexandre_Dumas" class="text center">
+        <ul>
+            <li class="purple-text">FRANÇOIS I., King of France.</li>
+            <div class="container">
+                <li> HENRI II., his successor.</li>
+                <div class="container">
+                    <li> CATHERINE DE MÉDICIS, Queen to Henri II.</li>
+                    <li> THE DAUPHIN, afterwards François II.</li>
+                    <div class="container">
+                        <li> HENRI, his brother, afterwards Henri III.</li>
+                    </div>
+                </div>
+                <li> MARY STUART, married to the Dauphin.</li>
+                <li> MARY, Queen of England.</li>
+                <li> DUC D'ORLÉANS, afterwards Charles IX.</li>
+                <div class="container">
+                    <li> MARGUERITE DE FRANCE, sister of Henri II.</li>
+                    <li> MARGUERITE DE VALOIS, daughter of Henri II.</li>
+                </div>
+                <li> PRINCESS ÉLISABETH.</li>
+                <li> FRANÇOIS, Duc d'Alençon.</li>
+                <li> DUC DE GUISE, Lieutenant-General of France.</li>
+                <li> MONSEIGNEUR LE CARDINAL DE LORRAINE, his brother.</li>
+            </div>
+            <li class="purple-text">DUC D'AUMALE, brother of Duc de Guise.</li>
+        </ul>
+    </div>
+    <div id="test" class="text center">
+        <h2>Header 2</h2>
+        <div>Div first
+            <div>Div second</div>
+        </div>
+        <h3>Head 3
+            <p>Text paragraph</p>
+            <div>Simple Div</div>
+        </h3>
+    </div>
+    <span class="gradline"></span>
+
+    <section class="interface">
+        <h1 class="purple-text center">Section for Results</h1>
+        <div class="output center">
+            <a onclick="out(this)">View</a>
+            <a onclick="print(get_all(document.getElementById('test')))">View 2</a>
+            <a onclick="print(get_all(document.getElementById('Alexandre_Dumas')))">View 3</a>
+            <a onclick="print2(get_all(document.getElementById('Alexandre_Dumas')))">View 3</a>
+        </div>
+    </section>
+    <div id="output" class="text">
+        
+    </div>
+
+</body>
+<script>
+    function out(el) {
+        var output = document.getElementById('output');
+
+        var par = document.createElement('div');
+        var text = document.createTextNode(
+        "<" + (el.nodeName) + "> "
+                + el.textContent + 
+        " <" + el.nodeName + ">");
+
+        par.appendChild(text);
+        output.appendChild(par);
+    }
+    //Requires
+    function print2(el) {
+        let mas_el = el.split("\n");
+        mas_el = mas_el.filter(element => element.trim());
+
+        let output = document.getElementById('output');
+        mas_el.forEach(element => {
+            while(element.includes(' ')){
+                element = element.replace(' ', '\u00A0');    
+            }
+            let par = document.createElement('p');
+            let text = document.createTextNode(element)
+
+            console.log(element);
+            par.appendChild(text);
+            output.appendChild(par);
+        });
+        
+    }
+    function print(el) {
+        let output = document.getElementById('output');
+
+        let par = document.createElement('div');
+        let text = document.createTextNode(el)
+
+        console.log(el);
+        par.appendChild(text);
+        output.appendChild(par);
+    }
+    function get_all(el) {
+        if (el.childNodes.length)
+        {
+            let result = "<" + el.nodeName + ">";
+         
+            for (let index = 0; index < el.childNodes.length; index++){
+                result += ' ' + get_all(el.childNodes[index]);
+                console.log(result + '\n\n');
+            }
+            el.childNodes.length === 1? result+= " ": result += "\n"; //if 1 kid close string on 1 line, else add \n
+            
+            result += "</" + el.nodeName + ">";
+
+            return result;
+        } else 
+            return el.textContent;
+    }
+</script>
+</html>

@@ -1,0 +1,91 @@
+body {
+    background: #000;
+}
+.container {
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+.center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.text {
+    font-size: 17px;
+    color: #cecece;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+}
+.purple-text {
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff 10%,#ae38ff 33%,
+    #ffb6ff 45%,#ffe3ff 50%,#ffb6ff 66%,#b344ff);
+    animation: gradAnimation 8s infinite;
+    background-position: 50% 0;
+    background-size: 100% 300%;
+    margin: 6px 0;
+    padding-top: 0.5px;
+
+    color: transparent;
+    -webkit-background-clip: text;
+}
+span.gradline {
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    height: 1px;
+    background-color: rgb(91, 26, 211);
+    animation: slidein 3s ease-in-out both;
+}
+
+.output a {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-size: 20px;
+    font-weight: 800;
+    
+    color: #cecece;
+    transition: 0.5s;
+    border: 2px solid #000;
+    background: #222;
+}
+.output a:hover {
+    border: 2px solid #cecece;
+    cursor: pointer;
+}
+#test *{
+    margin: 10px;
+}
+#output {
+    margin: 20px;
+}
+
+
+@keyframes gradAnimation {
+    0% {
+        background-position: 50% 0;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 50% 0;
+    }
+    to {
+        background-position: 50% 0;
+    }
+}
+@keyframes slidein {
+    0% {
+        transform: ScaleX(0);
+    }
+    to {
+        transform: ScaleX(100%);
+    }
+}

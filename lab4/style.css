@@ -1,0 +1,93 @@
+body {
+    background: #252422;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+}
+.center {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: block;
+}
+form div {
+    justify-content: center;
+}
+.button{
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: 0.5s;
+
+    margin: 0px 10px;
+    color: #cecece;
+    transition: 0.5s;
+    border: 2px solid #000;
+    background: #222;
+}
+.button:hover {
+    border: 2px solid #cecece;
+    color: #000;
+    cursor: pointer;
+}
+#output div *,
+#database div *{
+    text-align: center;
+    border: 1px solid;
+}
+div.purple-hover:hover {
+    background: #ae38ff;
+}
+div.purple {
+    background: #ae38ff;
+}
+#output div.purple-text div:hover {
+    color: #fff;
+    background: #ae38ff;
+}
+.table-view {
+    width: 500px;
+    white-space: nowrap;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.purple-text div{
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff 10%,#ae38ff 33%,
+    #ffb6ff 45%,#ffe3ff 50%,#ffb6ff 66%,#b344ff);
+    animation: gradAnimation 8s infinite;
+    background-position: 50% 0;
+    background-size: 100% 300%;
+    margin: 6px 0;
+    padding-top: 0.5px;
+
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyframes gradAnimation {
+    0% {
+        background-position: 50% 0;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 50% 0;
+    }
+    to {
+        background-position: 50% 0;
+    }
+}

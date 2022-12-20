@@ -1,0 +1,89 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #7d4e57;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.container {
+    background: #b7d1da;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+strong {
+    text-transform: uppercase;
+    border: 1px solid grey;
+}
+mark {
+    background-color: #acacde;
+    color: white;
+}
+.code {
+    background-color: azure;
+    border: 2px double #acacde;
+    padding: 5px;
+}
+s {
+    color: dimgray; 
+}
+small {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}
+samp {
+    border: 2px groove #acacde;
+    padding: 2px;
+    margin: 20px;
+    border-radius: 5px;
+}
+a {
+    color: #d66853;
+}
+a:hover {
+    color: #d90099;
+}
+.text {
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    overflow: hidden;
+    color: #cecece;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+}
+.my-grey {
+    color: #86868b;
+    flex-basis: 25%;
+}
+.my-purple {
+    font-size: 28px;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff 10%,#ae38ff 33%,
+    #ffb6ff 45%,#ffe3ff 50%,#ffb6ff 66%,#b344ff);
+    animation: gradientAnim2 8s infinite;
+    background-position: 50% 0;
+    background-size: 100% 300%;
+    animation-delay: 0ms;
+
+    margin: 6px 0;
+    padding-top: 0.5px;
+
+    color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes gradientAnim2 {
+    0% {
+        background-position:50% 0 }
+    25% {
+        background-position:50% 100%
+    }
+    50% {
+        background-position:50% 100%
+    }
+    75% {
+        background-position:50% 0
+    }
+    to {
+        background-position:50% 0
+    }
+}

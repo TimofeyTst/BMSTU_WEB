@@ -1,0 +1,7 @@
+.table table {
+    border: 2px solid grey;
+}
+
+.table table * {
+    border: 0.5px solid grey;
+}

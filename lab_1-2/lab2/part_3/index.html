@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link
+    href="src/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../part_2/index.html">Link</a>
+            </li>
+        </ul>
+    </nav>
+ </header>
+ <main class="container">
+    <div class="row">
+        <div class="col-4 img">
+            <img
+            src="src/avatar.jpg"
+            alt="avatar" width="150" height="150">
+        </div>
+        <div class="col-8 avatar_text">
+            <p>His horse, whose rein was passed through his arm, followed
+                 him, raising his head from time to time, snorting and neighing
+                  with pleasure in the fresh air that was blowing.</p>
+            <p><a href="https://dzen.ru/woman">The woman</a> seemed to belong, if not to the lower orders of society, 
+                at least to a class somewhere between them and the bourgeoisie. 
+                </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <form>
+                <table>
+                    <tr>
+                        <td>Full name</td>
+                        <td><input type="text" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td><input type="password" name="password_confirm"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="gender">Male</td>
+                        <td><input type="radio" name="gender">Female</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Send"></td>
+                    </tr>
+                </table>
+                </form>
+        </div>
+        <div class="col-8 table">
+            <table>
+                <tr>
+                    <th rowspan="7">ПН</th>
+                    <th>Время</th>
+                    <th>Числитель</th>
+                    <th>Знаменатель</th>
+                </tr>
+                <tr>
+                    <td>8:30-10:05</td>
+                    <td colspan="2">(сем) Теория вероятностей и математическая статистика 1035л</td>
+                </tr>
+                <tr>
+                    <td>10:15 - 11:50</td>
+                    <td colspan="2">(лек) Теория вероятностей и математическая статистика 218л Горяинов В. Б.</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:35</td>
+                    <td></td>
+                    <td></td> 
+                </tr>
+                <tr>
+                    <td>13:50 - 15:25</td>
+                    <td></td>
+                    <td></td> 
+                </tr>
+                <tr>
+                    <td>15:40 - 17:15</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17:25 - 19:00</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col container">
+            <p>Today we gonna to be <strong>millioners</strong></p>
+                <p>Things Happen <strong>for a Reason</strong></p>
+                <p>We dont know <mark>date of death</mark>, but we know <mark>date of bithday</mark></p>
+                <p>There <s>is no</s> Accidents</p>
+                <p>We couldn`t be <small>Younger then this</small> evening ever</p>
+                <p><strong>So what are you doing right now? Are you really want working on it and spend your daimond time?</strong></p>
+                <p><samp>Blokchain is the best way to see how encryption can work for people successfully transitions</samp></p>
+                <p>10 Septemeber 2022, <strong>my phone</strong> doesn`t ringing</p>
+                <p>16 September we can buy IPhone 14 from <cite><a href="https://github.com/timofeytst">official</a></cite> stories</p>
+                <p>Dark, green, blue, white, yellow, <mark>white-blue</mark>, salad-green, fucsia</p>
+                <p><a href="https://github.com/timofeytst">I know</a> C++, Qt, Delphi, CSS & HTML & JS, Solidity, Python [FastAPI, pydantic, sqlAlchemy...], SQL [Oracle, Microsoft SQL...]</p>
+                <p><strong>In 2021 when I was in my homecity</strong>, I loved to walk with <mark>one person</mark>. I haven`t been talking with her more than <strong>1 year</strong> since I am in Moscow</p>
+                <p>Math formules: <var>D</var><sub>o</sub> = (1/<var>f</var><sub>1</sub>)<sup>2</sup></p>
+                <p>Code on C++: </p>
+                <div class="code">
+                <code>
+                int main() {<br/>
+                    for(int i = 0; i &lt; 10; i++){<br/>
+                        std::cout &lt; &lt; i &lt; &lt; " and other" &lt; &lt; std::endl;<br/>
+                    }<br/>
+                std::cout &lt; &lt; "\n\tEnd\n";<br/>
+                }</code>
+                </div>
+        </div>
+    </div>
+ </main>
+ <footer class="my-primary">
+    <div class="container">
+        <p class="footer-text">Footer</p>
+    </div>
+ </footer>
+</body>
+</html>
