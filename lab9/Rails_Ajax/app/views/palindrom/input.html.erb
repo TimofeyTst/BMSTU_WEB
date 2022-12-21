@@ -1,0 +1,16 @@
+<h1 class="color-text center">Palindroms</h1>
+<p class="center">For example 202 and 202 ** 2 = 40804</p>
+<%= form_with url: "/palindrom/show", class: "center", 
+    id: "palindrom_form", 
+    local: false,
+    method: :get do |form| %>
+    <%= form.label :n, "Input end of palindrom`s range:", class: "center" %>
+    <%= form.text_field :n, class: "text-field", value: "1568" %>
+    <%= form.submit "Show", class:"button" %>
+<% end %>
+<div id="result" class="table"></div>
+
+<% unless flash[:error].nil?%>
+    <div class="error-text center"> <%= flash[:error] %> </div>
+<% end %>
+

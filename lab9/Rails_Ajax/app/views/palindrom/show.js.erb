@@ -1,0 +1,43 @@
+
+function check_params(params){
+    if (params.length == 0)
+        return false;
+    else 
+        return true;
+};
+
+function createListElement(el, ind) {
+    let row = document.createElement("div");
+    row.classList.add("row");
+    let col_1 = document.createElement("div");
+    col_1.classList.add("col-1");
+    let col_5 = document.createElement("div");
+    col_5.classList.add("col-5");
+    let col_6 = document.createElement("div");
+    col_6.classList.add("col-6");
+    col_1.textContent = ind;
+    col_5.textContent = el;
+    col_6.textContent = el * el;
+    row.appendChild(col_1);
+    row.appendChild(col_5);
+    row.appendChild(col_6);
+    result.appendChild(row);
+};
+
+function createError(Error) {
+    result.innerHTML = "";
+    row = document.createElement("div");
+    row.classList.add("row", "center", "error-text");
+    row.textContent = Error;
+    result.appendChild(row);
+}
+var result = document.getElementById("result");
+
+if (<%=@result%>.length == 0) {
+    createError("Error: params should be a number");
+} else {
+    result.innerHTML = "";
+    <%=@result%>.forEach((el, ind) => {
+        createListElement(el, ind);
+    })
+};

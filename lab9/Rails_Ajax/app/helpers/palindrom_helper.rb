@@ -1,0 +1,2 @@
+module PalindromHelper
+end
