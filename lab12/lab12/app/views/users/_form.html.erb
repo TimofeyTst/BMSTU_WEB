@@ -1,0 +1,33 @@
+<div class="container form">
+  <%= form_with(model: user) do |form| %>
+    <div class="line">
+      <%= form.label :login, style: "display: block" %>
+      <%= form.text_field :login %>
+    </div>
+
+    <div class="line">
+      <%= form.label :password, style: "display: block" %>
+      <%= form.password_field :password %>
+    </div>
+
+    <div class="line">
+      <%= form.label :password_confirmation, style: "display: block" %>
+      <%= form.password_field :password_confirmation %>
+    </div>
+
+    <div class="submit">
+      <%= form.submit 'Submit', class: 'button' %>
+    </div>
+
+    <% if user.errors.any? %>
+      <div class="container">
+        <h2 class="error-text"><%= pluralize(user.errors.count, "error") %> in creating user </h2>
+        <ul class="error-text">
+          <% user.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  <% end %>
+</div>

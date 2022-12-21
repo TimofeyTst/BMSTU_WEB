@@ -1,0 +1,10 @@
+<h1 class="color-text center">Palindroms</h1>
+<p class="center">For example 202 and 202 ** 2 = 40804</p>
+<%= form_with url: palindrom_show_path, class: "center", 
+    id: "palindrom_form" do |form| %>
+    <%= form.label :n, "Input end of palindrom`s range:", class: "center" %>
+    <%= form.number_field :n, class: "text-field", value: "1568" %>
+    <%= form.submit "Ok", class:"button", id: 'ok' %>
+<% end %>
+<div id="result" class="container"></div>
+

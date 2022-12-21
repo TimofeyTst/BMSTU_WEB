@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xslt"?>
+<objects type="array">
+  <object>
+    <palindrom type="integer">1</palindrom>
+    <square type="integer">1</square>
+  </object>
+  <object>
+    <palindrom type="integer">2</palindrom>
+    <square type="integer">4</square>
+  </object>
+  <object>
+    <palindrom type="integer">3</palindrom>
+    <square type="integer">9</square>
+  </object>
+  <object>
+    <palindrom type="integer">11</palindrom>
+    <square type="integer">121</square>
+  </object>
+  <object>
+    <palindrom type="integer">22</palindrom>
+    <square type="integer">484</square>
+  </object>
+  <object>
+    <palindrom type="integer">101</palindrom>
+    <square type="integer">10201</square>
+  </object>
+  <object>
+    <palindrom type="integer">111</palindrom>
+    <square type="integer">12321</square>
+  </object>
+  <object>
+    <palindrom type="integer">121</palindrom>
+    <square type="integer">14641</square>
+  </object>
+</objects>

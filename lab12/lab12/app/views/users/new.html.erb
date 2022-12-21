@@ -1,0 +1,10 @@
+<div class="container form">
+  <h2 class="color-text">Register</h2>
+
+  <%= render "form", user: @user %>
+
+  <div class="line">
+    <div>Already have an account?</div>
+    <%= link_to 'Sign in', session_new_path %>
+  </div>
+</div>

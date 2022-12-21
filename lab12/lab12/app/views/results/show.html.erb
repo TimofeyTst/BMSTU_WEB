@@ -1,0 +1,13 @@
+<% if notice.present? %>
+  <p style="color: green"><%= notice %></p>
+<% end %>
+
+<%= render @result %>
+
+<div class="links">
+  <%= link_to "Edit this result", edit_result_path(@result) %> |
+  <%= link_to "Back to results", results_path %>
+</div>
+<div class="destroy">
+  <%= button_to "Destroy this result", @result, class: 'button', method: :delete %>
+</div>

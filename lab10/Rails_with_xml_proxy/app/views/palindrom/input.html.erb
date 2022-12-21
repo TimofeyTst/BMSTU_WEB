@@ -1,0 +1,28 @@
+<h1 class="color-text center">Palindroms</h1>
+<p class="center">For example 202 and 202 ** 2 = 40804</p>
+<div class="container">
+    <%= form_with url: "/palindrom/show", method: :get do |form| %>
+        <div class="input">
+            <%= form.label :n, "Input end of palindrom`s range:"%>
+            <%= form.text_field :n, class: "text-field", value: 5262 %>
+        </div>
+        <div class="checkbox">
+            <%= form.radio_button :side, "Blank xml"%>
+            <%= form.label :xml, "Blank xml" %>
+        </div>
+        <div class="checkbox">
+            <%= form.radio_button :side, "On server"%>
+            <%= form.label :xslt_server, "On server" %>
+        </div>
+        <div class="checkbox">
+            <%= form.radio_button :side, "On client" %>
+            <%= form.label :xslt_client, "On client" %>
+        </div>
+        <div class="center">
+            <%= form.submit "Show", class:"button" %>
+        </div>
+    <% end %>
+</div>
+<% unless flash[:error].nil?%>
+    <div class="error-text"> <%= flash[:error] %> </div>
+<% end %>

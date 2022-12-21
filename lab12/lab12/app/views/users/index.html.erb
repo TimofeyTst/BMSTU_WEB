@@ -1,0 +1,14 @@
+<h2 class="color-text">Users</h2>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <div class="element">
+      <%= render user %>
+      <p>
+        <%= link_to "Show this user", user %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New user", new_user_path %>

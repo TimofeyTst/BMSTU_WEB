@@ -1,0 +1,16 @@
+<h1 class="color-text"> Palindroms from 1 to <%= params[:n] %> </h1>
+<p class="notice-text"><%= @notice %></p>
+<div class="table">
+    <div class="row header">
+        <div class="col-4"> # </div>
+        <div class="col-3"> Number </div>
+        <div class="col-4"> Number ** 2</div>
+    </div>
+    <% @result.decoded_result.each_with_index do |el, idx| %>
+    <div class="row">
+        <div class="col-4"> <%= idx+1 %>.</div>
+        <div class="col-3"> <%= el %> </div>
+        <div class="col-4"> <%= el**2 %> </div>
+    </div>
+    <% end %>
+</div>
