@@ -24,7 +24,7 @@ symbol &nbsp. Using DOM
     > Form for entering goods and their cost, adding to the order with the ability to calculate the total cost. Ability to select from the database of products to add to the cart, with a background change when hovering over the product. 
 ----------------------------------------------------------------
 ### Labs 5-7 Ruby
-All labs with tests using RSpec or Minitest
+#### All labs with tests using RSpec or Minitest
 * Lab 5 Simple Ruby programs
     * Part 1
         > Calculate: y = cos(x + 3.1 z)/tg(x/r)
