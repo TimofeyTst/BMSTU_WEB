@@ -22,6 +22,8 @@ symbol &nbsp. Using DOM
     > Using JavaScript DOM & HTML & CSS 
     
     > Form for entering goods and their cost, adding to the order with the ability to calculate the total cost. Ability to select from the database of products to add to the cart, with a background change when hovering over the product. 
+
+<br><br/>
 ----------------------------------------------------------------
 ### Labs 5-7 Ruby
 #### All labs with tests using RSpec or Minitest
@@ -53,6 +55,8 @@ starts with a digit, replace that digit with "_".
         > Given a string file. It is necessary to return the file of lines in the reverse order, while in each line the word order must be reversed. Tests should check the work with files
     * Part 2
         > Create a circle and point object. The point has the coordinates of the center, the circle is given by the point and the radius. In tests, check the class hierarchy
+
+<br><br/>
 ----------------------------------------------------------------
 ### Labs 8-12 Ruby on Rails
 #### All laboratory works are aimed at studying the framework. The initial task for them:
