@@ -5,7 +5,7 @@
 > * Rails version 7.0.4
 
 ## Tasks
-### Labs 1-4 CSS & HTML & JavsScript with DOM
+### Labs 1-4 CSS & HTML & JavaScript with DOM
 
 * Lab 1
     > Simple html site
