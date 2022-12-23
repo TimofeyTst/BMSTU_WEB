@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Consonant = 'бвгджзклмнпрстфхцчшщБВГДЖЗКЛМНПРСТФХЦЧШЩ'
 
 # Return Array
@@ -13,7 +15,7 @@ def without_consonant(mas)
       if el.delete(Consonant).empty?
         print "#{el} => #{el.delete(Consonant).empty?}, Всего слов: #{consonant_words += 1}\t"
       else
-        str += el + ' '
+        str += "#{el} "
       end
     end
 

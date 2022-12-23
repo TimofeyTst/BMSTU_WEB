@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'main'
 
 print "y = cos(x + 3.1 * z) / tg(x / r)\n\tInput x: "

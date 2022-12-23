@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # tg(x/r)
 class Solution
   include Math

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This class is responsible for checking is the elements before first negative sorted from min to max.
 class Solution
   attr_accessor :arr_new, :arr
