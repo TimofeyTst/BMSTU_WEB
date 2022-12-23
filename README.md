@@ -1,11 +1,11 @@
-# BMSTU 3 sem Labs 
+# BMSTU 3 sem Labs
 
 > Config
 > * Ruby version 3.0.2
 > * Rails version 7.0.4
 
-## Tasks
-### Labs 1-4 CSS & HTML & JavaScript with DOM
+<br><br/>
+## Labs 1-4 CSS & HTML & JavaScript with DOM
 
 * Lab 1
     > Simple html site
@@ -24,8 +24,7 @@ symbol &nbsp. Using DOM
     > Form for entering goods and their cost, adding to the order with the ability to calculate the total cost. Ability to select from the database of products to add to the cart, with a background change when hovering over the product. 
 
 <br><br/>
-----------------------------------------------------------------
-### Labs 5-7 Ruby
+## Labs 5-7 Ruby
 #### All labs with tests using RSpec or Minitest
 * Lab 5 Simple Ruby programs
     * Part 1
@@ -57,8 +56,7 @@ starts with a digit, replace that digit with "_".
         > Create a circle and point object. The point has the coordinates of the center, the circle is given by the point and the radius. In tests, check the class hierarchy
 
 <br><br/>
-----------------------------------------------------------------
-### Labs 8-12 Ruby on Rails
+## Labs 8-12 Ruby on Rails
 #### All laboratory works are aimed at studying the framework. The initial task for them:
 > Write a program to determine how many of the numbers are in a range
 from 0 to n (n is entered from the keyboard), being themselves palindromes, with
